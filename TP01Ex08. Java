@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class TPO1Ex08 {
+    public static void main(String[] args) {
+        // Exercício 8: Converter milhas marítimas em quilômetros.
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a quantidade de milhas marítimas: ");
+        double milhas = scanner.nextDouble();
+
+        double metrosPorMilha = 1852;
+        double quilometros = (milhas * metrosPorMilha) / 1000;
+
+        System.out.println(milhas + " milhas marítimas equivalem a " + quilometros + " quilômetros.");
+
+        scanner.close();
+    }
+}
