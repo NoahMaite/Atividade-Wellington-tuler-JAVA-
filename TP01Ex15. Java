@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class TP01Ex15 {
+    public static void main(String[] args) {
+        // Questão 15: Entrar via teclado com o valor da cotação do dólar e uma certa quantidade de dólares. 
+        // Calcular e exibir o valor correspondente em Reais (R$).
+
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite o valor da cotação do dólar: ");
+        double cotacaoDolar = scanner.nextDouble();
+        
+        System.out.print("Digite a quantidade de dólares: ");
+        double quantidadeDolares = scanner.nextDouble();
+        
+        double valorReais = cotacaoDolar * quantidadeDolares;
+        
+        System.out.println("O valor em Reais (R$) é: " + valorReais);
+        
+        scanner.close();
+    }
+}
+
+
+
