@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class TPO1Ex09 {
+    public static void main(String[] args) {
+        // Exercício 9: Calcular e exibir a tensão de um circuito eletrônico a partir dos valores da resistência e corrente elétrica digitados, utilizando a Lei de Ohm.
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o valor da resistência (em ohms): ");
+        double resistencia = scanner.nextDouble();
+
+        System.out.print("Digite o valor da corrente elétrica (em amperes): ");
+        double corrente = scanner.nextDouble();
+
+        double tensao = resistencia * corrente;
+
+        System.out.println("A tensão do circuito é: " + tensao + " volts");
+
+        scanner.close();
+    }
+}
